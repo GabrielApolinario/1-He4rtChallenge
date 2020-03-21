@@ -11,19 +11,16 @@
 
             </div>
             <form action="#" class="form">
-                <label>Valor total</label>
-                <input type="number" name="nmbTotal" id="nmbTotal" placeholder="Valor total do projeto">
-                <br/>
-                <label>Horas por dia</label>
-                <input type="number" name="nmbHourDay" id="nmbHourday" placeholder="Quantidade de horas trabalhadas por dia">
-                <br/>
-                <label>Dias por semana</label>
-                <input type="number" name="nmbDaysWeek" id="nmbDaysWeek" placeholder="Dias trabalhados por semana">
-                <br/>
-                <label>Dias de férias</label>                
-                <input type="number" name="nmbVacation" id="nmbVacation" placeholder="Dias de férias pelo projeto">
-                <br/>
-                <button type="submit" name="btnResult" id="btnResult" onclick="calculate()">Calcular</button>
+                <H1 class="captionForm">Cálculo de Horas</H1>
+                <label>Valor total:</label>
+                <input type="number" name="nmbTotal" id="nmbTotal" placeholder="R$">             
+               <label>Horas por dia:</label>
+                <input type="number" name="nmbHourDay" id="nmbHourday" placeholder="Horas diárias">               
+                <label>Dias semana:</label>
+                <input type="number" name="nmbDaysWeek" id="nmbDaysWeek" placeholder="Dias na semana">               
+                <label>Dias de férias:</label>                
+                <input type="number" name="nmbVacation" id="nmbVacation" placeholder="Dias de férias">               
+                <input type="submit" name="btnResult" id="btnResult" value="Calcular" onclick="calculate()">
             </form>
         </div>
     </body>

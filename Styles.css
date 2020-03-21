@@ -6,15 +6,14 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 250px);
+    gap: 15px;
+    overflow: hidden;
 }
 
 .header{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     grid-column-start:1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -23,43 +22,50 @@ body{
 }
 
 .form{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    background: rgb(253,244,45);
+    background: linear-gradient(0deg, rgba(253,244,45,1) 4%, rgba(99,34,195,1) 79%);
+    font-family: Century Gothic;
+    border: none;
+    border-radius: 12px;
+    grid-column: 2;
     grid-row-start: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 500px;
-    background: rgb(253,187,45);
-    background: linear-gradient(0deg, rgba(253,187,45,1) 2%, rgba(99,34,195,1) 70%);
-    padding: 10px 0 0 0;
-    border-radius: 10px;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self: stretch;
+    padding-top: 3%;
 }
 
 .form label{
+    margin: 6% 0 5% 15%;
+    margin-bottom: 5%;
     text-align: right;
-    font-family: Century gothic;
+    clear: both;
+    float: left;
     font-size: large;
     color: rgb(255,255,255);
 }
 
 .form input{
-    margin-left:40%;
+    margin: 6% 10% 10% 0%;
+    float: right;
     border: none;
-    border-radius: 8px;
-    width: 50%;
-    height: 40px;
+    border-radius: 3px;
+    font-size: large;
+    height: fit-content;
+    width: 40%;
 }
-
 
 .form button{
-    border-radius: 8px;
-    width: 50%;
-    height: 40px;
-    font-size: x-large;
-    border: none;
+    border: none;  
+    text-align: center;
 }
+
+.captionForm{
+    font-family: Century Gothic;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
