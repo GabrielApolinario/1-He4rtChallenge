@@ -56,8 +56,14 @@ body{
 }
 
 .form button{
-    border: none;  
+    border: solid 0 7px 7px 0;
+    border-radius: 5px;  
     text-align: center;
+    margin: autoS;
+    font-family: Century Gothic;
+    font-size: large;
+    width: 100%;
+    height: 5%;
 }
 
 .captionForm{
